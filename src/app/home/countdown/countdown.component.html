@@ -1,0 +1,44 @@
+<mat-grid-list cols="3" style="color: white" gutterSize="600px" *ngIf="isDesktop; else isMobile">
+    <mat-grid-tile [colspan]="3">
+        <section id="section">
+            <h1>120</h1>
+            <h4><strong>DAYS</strong></h4>
+        </section>
+        <section id="section">
+            <h1>21</h1>
+            <h4><strong>HOURS</strong></h4>
+        </section>
+        <section id="section">
+            <h1>17</h1>
+            <h4><strong>MINUTES</strong></h4>
+        </section>
+        <section id="section">
+            <h1>25</h1>
+            <h4><strong>SECONDS</strong></h4>
+        </section>
+    </mat-grid-tile>
+</mat-grid-list><br><br>
+<ng-template #isMobile>
+    <mat-grid-list cols="1" style="color: white" gutterSize="50px" rowHeight="80px">
+        <mat-grid-tile [colspan]="1" [rowspan]="1">
+            <section id="section">
+                <h1>120 <strong>DAYS</strong></h1>
+            </section>
+        </mat-grid-tile>
+        <mat-grid-tile>
+            <section id="section">
+                <h1>21 HOURS</h1>
+            </section>
+        </mat-grid-tile>
+        <mat-grid-tile>
+            <section id="section">
+                <h1>17 MINUTES</h1>
+            </section>
+        </mat-grid-tile>
+        <mat-grid-tile>
+            <section id="section">
+                <h1>25 SECONDS</h1>
+            </section>
+        </mat-grid-tile>
+    </mat-grid-list>
+</ng-template>

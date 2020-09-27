@@ -1,0 +1,42 @@
+  
+@import '~@angular/material/theming';
+@include mat-core();
+$primary-theme: (
+    50 : #fce8e8,
+    100 : #f9c5c5,
+    200 : #f59e9e,
+    300 : #f07777,
+    400 : #ed5a5a,
+    500 : #ea3d3d,
+    600 : #e73737,
+    700 : #e42f2f,
+    800 : #e12727,
+    900 : #db1a1a,
+    A100 : #ffffff,
+    A200 : #ffdbdb,
+    A400 : #ffa8a8,
+    A700 : #ff8f8f,
+    contrast: (
+        50 : #000000,
+        100 : #000000,
+        200 : #000000,
+        300 : #000000,
+        400 : #000000,
+        500 : #ffffff,
+        600 : #ffffff,
+        700 : #ffffff,
+        800 : #ffffff,
+        900 : #ffffff,
+        A100 : #000000,
+        A200 : #000000,
+        A400 : #000000,
+        A700 : #000000,
+    )
+);
+
+$secondary-theme: ( 50: #e5ebf0, 100: #beccda, 200: #93aac2, 300: #6888a9, 400: #476f96, 500: #275584, 600: #234e7c, 700: #1d4471, 800: #173b67, 900: #0e2a54, A100: #8bb5ff, A200: #5895ff, A400: #2574ff, A700: #0b64ff, contrast: ( 50: #000000, 100: #000000, 200: #000000, 300: #000000, 400: #ffffff, 500: #ffffff, 600: #ffffff, 700: #ffffff, 800: #ffffff, 900: #ffffff, A100: #000000, A200: #000000, A400: #ffffff, A700: #ffffff, ));
+$my-app-primary: mat-palette($primary-theme);
+$my-app-accent: mat-palette($secondary-theme);
+$my-app-warn: mat-palette($mat-deep-orange);
+$my-app-theme: mat-light-theme($my-app-primary, $my-app-accent, $my-app-warn);
+@include angular-material-theme($my-app-theme);

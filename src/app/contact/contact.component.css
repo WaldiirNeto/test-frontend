@@ -1,0 +1,134 @@
+:host {
+  background-color:#263238;
+  size: 200px 200px;
+  display: block;
+}
+
+/*
+  background-position: center center;
+  
+
+  background-repeat: no-repeat;
+  
+
+     
+  background-attachment: fixed;
+  
+
+
+  background-size: cover;
+
+  background-color:#263238;
+*/
+.example-card {
+    max-width: 60%;
+    max-height: 600px;
+  }
+  
+  .example-header-image {
+    background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+    background-size: cover;
+  }
+
+  #background {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 50%;
+    height: 100%;
+    background-color: #263238;
+    z-index: 1;
+}
+
+#content {
+    position: relative;
+    z-index: 2;
+    padding: 30px;
+    text-align: center;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+}
+
+#divs {
+    position: relative;
+    height: 100%;
+  }
+  
+  #divs>div {
+    width: 50vw;
+    height: 100vh;
+    color: white;
+    text-align: center;
+  }
+  h1 {
+      font-size: 50px;
+  }
+  .solid {
+      width: 35px;
+    border-top: 2px solid #bbb;
+  }
+  #div-a {
+    text-align: left;
+    background:   #ec2b2b;
+    width: 50%;
+    height: 100%;
+  }
+  
+  #div-b {
+    background: #FFCA28;
+    width: 50vw;
+  }
+  #buttons {
+    position: absolute;
+    width: 80vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: -75vh 10vw 0 15vw;
+  }
+  
+  #buttons>button {
+    width: 100px;
+    height: 50px;
+    background: #69F0AE;
+    color: white;
+    border: none;
+    font-size: 15px;
+    margin-left: 10vw;
+    margin-right: 10vw;
+  }
+
+  .input-headline {
+    font-size: 28px;
+}
+
+.danger {
+    width: 20%;
+    border-color: #f44336;
+    color: red;
+    font-size: 20px;
+  }
+
+
+
+
+
+.example-form {
+    width: 100%;
+    height: 600px;
+  }
+  
+  .example-full-width {
+    width: 100%;
+  }
+
+  .justify{
+      opacity: 0.6;
+    font-size: 18px;
+    margin-left: 35%;
+    /* border: 1px solid black; */
+    padding: 10px;
+    width: 300px;
+    height: 500px;
+    text-align: justify;
+  }

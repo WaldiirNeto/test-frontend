@@ -1,0 +1,53 @@
+<div id="divs">
+  <div id="div-a">
+
+    <br><br><br><br><br><br><br><br><br><br>
+    <h1>CONTACT <strong>US</strong></h1>
+    <div class="justify">
+      <hr style="width:25%;text-align:left;margin-left:0">
+      <br><br>
+      We are here help you and support and find answers
+      to your questions on our Support section.
+      if you cant't find the answerto your
+      question or have any feedback, reach out
+      to us by completing the form.
+      All fields are mandatory unless otherwise
+      stated.<br><br><br>
+      <hr style="width:25%;text-align:left;margin-left:0"><br><br>
+      <strong>Addres:</strong> 123 Palo Alto, Palo Alto, Palo alto, CA 94300<br><br>
+      <strong>Phone:</strong> +1 234-567-8910<br><br>
+      <strong>Email:</strong> contact@seudomain.net<br><br>
+      <img src="/assets/img/social_media.png">
+    </div>
+  </div>
+</div>
+<div id="buttons">
+  <mat-card class="example-card">
+    <mat-card-content>
+      <form [formGroup]="contactForm" class="example-form" (submit)="onSubmit()">
+        <mat-form-field class="example-full-width" [style.fontSize]="'20'">
+          <mat-label [style.fontSize]="'20px'">Your Name</mat-label><br>
+          <input matInput formControlName="name" type="text" placeholder="João Silva" autocomplete="new-password" />
+        </mat-form-field>
+        <mat-form-field class="example-full-width">
+          <mat-label [style.fontSize]="'20px'">Your Email</mat-label><br>
+          <input matInput formControlName="email" type="email" placeholder="joao@gmail.com"
+            autocomplete="new-password" />
+        </mat-form-field>
+        <mat-form-field class="example-full-width">
+          <mat-label [style.fontSize]="'20px'">Subject</mat-label><br>
+          <input matInput formControlName="subject" type="text" placeholder="Subject..." autocomplete="new-password" />
+        </mat-form-field>
+        <mat-form-field class="example-full-width">
+          <mat-label [style.fontSize]="'20px'">Your Message</mat-label>
+          <textarea matInput formControlName="message" cdkTextareaAutosize #autosize="cdkTextareaAutosize"
+            cdkAutosizeMinRows="10" cdkAutosizeMaxRows="5"></textarea>
+        </mat-form-field>
+        <button mat-stroked-button class="danger" [disabled]="contactForm.invalid">SUBMIT</button>
+      </form>
+    </mat-card-content>
+    <mat-card-actions>
+    </mat-card-actions>
+  </mat-card>
+
+</div>

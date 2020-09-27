@@ -1,0 +1,15 @@
+<app-header></app-header>
+<mat-grid-list [cols]="1" gutterSize="600px" rowHeight="360px" *ngIf="isDesktop; else homeMobile">
+    <mat-grid-tile>
+        <img src="/assets/img/text_and_square.png">
+    </mat-grid-tile>
+</mat-grid-list>
+<ng-template #homeMobile>
+    <mat-grid-list [cols]="1" gutterSize="600px" rowHeight="360px">
+        <mat-grid-tile>
+            <img src="/assets/img/text_and_square_mobile.png" style="margin-left: 10px">
+        </mat-grid-tile>
+    </mat-grid-list>
+</ng-template>
+
+<app-countdown></app-countdown>

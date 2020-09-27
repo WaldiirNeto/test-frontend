@@ -1,10 +1,10 @@
-/* You can add global styles to this file, and also import other style files */
+h1 {
+    color: white;
+    font-size: 50px;
+}
 
-html, body { 
-     height: 100%;
+:host {
     
-     margin: 0; font-family: 'Roboto Light', 'Roboto Medium', 'Roboto';
-
   background-image: url(/assets/img/bg_img.png);
   
   /* Background image is centered vertically and horizontally at all times */
@@ -27,12 +27,5 @@ html, body {
      while the background image is loading */
   background-color:    #ec2b2b;
 
-
-}
-@media only screen and (max-width: 767px) {
-   body {
-     /* The file size of this background image is 93% smaller
-        to improve page load speed on mobile internet connections */
-     background-image: url(/assets/img/bg_img_mobile.png);
-   }
- }
+  }
+  
