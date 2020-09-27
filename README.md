@@ -2,8 +2,10 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.0.
 
-## Install
+## Install angular cli
+`npm install -g @angular/cli`
 
+## Install repository
 git clone `https://github.com/WaldiirNeto/test-frontend.git`
 in the root folder install the dependencies : `npm install`
 
