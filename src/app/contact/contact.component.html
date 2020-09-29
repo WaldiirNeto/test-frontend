@@ -6,27 +6,32 @@
       </div>
     </div>
     <br><br><br><br><br>
-    <div class="justify">
-      <h1 *ngIf="isDesktop">CONTACT <strong>US</strong></h1>
-      <hr style="width:25%;text-align:left;margin-left:0" *ngIf="isDesktop">
+    <div class="justify" *ngIf="!medium_small; else contactMobile">
+      <h1>CONTACT<strong> US</strong></h1>
+      <hr style="width:25%;text-align:left;margin-left:0" *ngIf="!medium_small">
       <br><br>
-      <p *ngIf="isDesktop">We are here help you and support and find answers
+      <p *ngIf="!medium_small">We are here help you and support and find answers
         to your questions on our Support section.
         if you cant't find the answerto your
         question or have any feedback, reach out
         to us by completing the form.
         All fields are mandatory unless otherwise
         stated. </p><br><br><br>
-      <hr style="width:25%;text-align:left;margin-left:0" *ngIf="isDesktop">
-      <div *ngIf="isDesktop"><strong>Addres:</strong>
+      <hr style="width:25%;text-align:left;margin-left:0" *ngIf="!medium">
+      <div *ngIf="!medium_small"><strong>Addres:</strong>
         123 Palo Alto, Palo Alto, Palo alto, CA 94300<br><br>
         <strong>Phone:</strong>
         +1 234-567-8910<br><br>
         <strong>Email:</strong>
         contact@seudomain.net<br><br>
       </div>
-      <img *ngIf="isDesktop" src="/assets/img/social_media.png">
+      <img src="/assets/img/social_media.png" *ngIf="!medium_small">
     </div>
+    <ng-template #contactMobile>
+      <div class="justify-mobile">
+        <h1 *ngIf="!xsmall">CONTACT</h1>
+      </div>
+    </ng-template>
   </div>
 </div>
 <div id="buttons">
@@ -51,7 +56,7 @@
           <textarea matInput formControlName="message" cdkTextareaAutosize #autosize="cdkTextareaAutosize"
             cdkAutosizeMinRows="10" cdkAutosizeMaxRows="5"></textarea>
         </mat-form-field>
-        <button mat-stroked-button [ngClass]="{'danger': isDesktop, 'danger-mobile': !isDesktop }"
+        <button mat-stroked-button [ngClass]="{'danger': large, 'danger-mobile': xsmall }"
           [disabled]="contactForm.invalid">SUBMIT</button>
       </form>
     </mat-card-content>

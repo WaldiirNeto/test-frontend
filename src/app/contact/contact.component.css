@@ -55,7 +55,7 @@
 }
 
 #divs {
-    position: inherit;
+    position: relative;
     height: 100%;
   }
   
@@ -146,4 +146,7 @@
   }
   p {
          opacity: 0.6;
+  }
+  .justify-mobile {
+    margin-left: 80%;
   }

@@ -28,3 +28,23 @@
     white-space: nowrap;
     background: transparent;
 }
+.header-desktop {
+  min-height:30%; 
+  padding: 3% 17% 9% 18%;
+}
+.header-desktop-xlarge {
+  min-height:30%; 
+  padding: 3% 17% 9% 18%;
+}
+.header-medium {
+  min-height:30%; 
+  padding: 5% 17% 9% 18%;
+}
+.header-small {
+  min-height:30%; 
+  padding: 10% 17% 9% 18%;
+}
+.header-xsmall {
+  min-height:30%; 
+  padding: 10% 17% 9% 18%;
+}

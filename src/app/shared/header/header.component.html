@@ -1,4 +1,5 @@
-<mat-toolbar style="min-height:30%; padding: 3% 17% 9% 18%;" *ngIf="isDesktop; else isMobile">
+<mat-toolbar *ngIf="!xsmall; else isMobile"
+    [ngClass]="{'header-desktop': large, 'header-desktop-xlarge': xlarge, 'header-medium': medium, 'header-small': small }">
     <img src="assets/img/logo_teste.png" routerLink="" style="cursor: pointer;">
     <span class="example-spacer"></span>
     <span flex></span>
@@ -6,6 +7,7 @@
     <span routerLink="contact" style="cursor: pointer;">Contact Us</span>
 </mat-toolbar>
 <ng-template #isMobile>
+    <img src="assets/img/logo_teste.png" routerLink="" style="cursor: pointer;"><br>
     <button style="cursor: pointer;" mat-icon-button [matMenuTriggerFor]="menu"
         aria-label="Example icon-button with a menu">
         <mat-icon>menu</mat-icon>
